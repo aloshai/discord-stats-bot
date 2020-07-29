@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 class Database {
-    constructor(location = "Database", name = "All.json"){
+    constructor(location = "Database", name = "All"){
         if(location == "Database" && !fs.existsSync(`${__dirname}/Database`))
         {
             fs.mkdirSync(`${__dirname}/Database`, {recursive: true});
