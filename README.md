@@ -21,3 +21,8 @@ Discord'da bot olarak geliştirilen, kullanıcıların aktifliğiyle alakalı en
 # 🎉 Tada! Botun artık hazır! 🎉
 
 > Dipnot: Botun veritabanı tamamen yerel bir `JSON` dosyası olarak çalışıyor. Eğer makineniz/bilgisayarınız/sunucunuz herhangi bir şekilde dosya yazma/oluşturma/okuma izinlerine sahip değilse bu veritabanı tamamen geçersiz olur.
+
+
+# discord.gg/serendia
+
+# Bot içindeki özellikler sürümden kaynaklıdır. İleriki zamanlarda yeni özellikler ve istatistikler getireceğiz.
