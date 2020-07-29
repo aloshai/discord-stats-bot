@@ -25,4 +25,4 @@ Discord'da bot olarak geliştirilen, kullanıcıların aktifliğiyle alakalı en
 
 # discord.gg/serendia
 
-# Bot içindeki özellikler sürümden kaynaklıdır. İleriki zamanlarda yeni özellikler ve istatistikler getireceğiz.
+### Bot içindeki özellikler sürümden kaynaklıdır. İleriki zamanlarda yeni özellikler ve istatistikler getireceğiz.
