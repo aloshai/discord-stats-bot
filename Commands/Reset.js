@@ -30,18 +30,18 @@ exports.run = async (client, message, args) => {
 
     switch (reply.content) {
         case "all":
-            vt.set("stats", {});
-            mdb.set("stats", {});
+            vt.set(`stats.${message.guild.id}`, {});
+            mdb.set(`stats.${message.guild.id}`, {});
             break;
         case "voice":
-            vt.set("stats", {});
+            vt.set(`stats.${message.guild.id}`, {});
             break;
         case "messages":
-                mdb.set("stats", {});
+                mdb.set(`stats.${message.guild.id}`, {});
                 break;
         default:
-            vt.set("stats", {});
-            mdb.set("stats", {});
+            vt.set(`stats.${message.guild.id}`, {});
+            mdb.set(`stats.${message.guild.id}`, {});
             break;
     }
     delete_Messages(deleteMessages);
