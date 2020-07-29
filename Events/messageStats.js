@@ -8,8 +8,8 @@ const vt = new Database("Database", "Message");
 exports.execute = async (message) => {
     if(message.author.bot || message.content.startsWith(global.Settings.Prefix)) return;
 
-    vt.add(`stats.${message.author.id}.channels.${message.channel.id}`, 1);
-    vt.set(`stats.${message.author.id}.activity`, Date.now());
+    vt.add(`stats.${message.guild.id}.${message.author.id}.channels.${message.channel.id}`, 1);
+    vt.set(`stats.${message.guild.id}.${message.author.id}.activity`, Date.now());
 };
 
 exports.conf = {
