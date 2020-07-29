@@ -31,7 +31,9 @@ exports.run = async (client, message, args) => {
     }).sort((a, b) => b.Total - a.Total);
 
     voiceList = voiceList.length > 10 ? voiceList.splice(0, 10) : voiceList;
+    voiceList = voiceList.map((vd, index)=> `\`${index + 1}.\` ${client.channels.cache.has(vd.Id) ? client.channels.cache.get(vd.Id).toString() : "#deleted-channel"}: \`${moment.duration(vd.Total).format("H [hours,] m [minutes]")}\``).join("\n");
     messageList = messageList.length > 10 ? messageList.splice(0, 10) : messageList;
+    messageList = messageList.map((md, index)=> `\`${index + 1}.\` ${client.channels.cache.has(md.Id) ? client.channels.cache.get(md.Id).toString() : "#deleted-channel"}: \`${md.Total} message\``).join("\n");
     let embed = new Discord.MessageEmbed();
     embed.setColor(message.member.displayHexColor)
     .setFooter(`${message.author.tag} | Powered by Serendia Squad`)
@@ -45,12 +47,12 @@ exports.run = async (client, message, args) => {
     .addField("Voice Activity", `
     Last Activity: ${new Date(voiceData.activity).toLocaleDateString()}
 
-    ** **${voiceList.map((vd, index)=> `\`${index + 1}.\` ${client.channels.cache.has(vd.Id) ? client.channels.cache.get(vd.Id).toString() : "#deleted-channel"}: \`${moment.duration(vd.Total).format("H [hours,] m [minutes]")}\``).join("\n")}
+    ** **${voiceList}
     `)
     .addField("Message Activity", `
     Last Activity: ${new Date(messageData.activity).toLocaleDateString()}
 
-    ** **${messageList.map((md, index)=> `\`${index + 1}.\` ${client.channels.cache.has(md.Id) ? client.channels.cache.get(md.Id).toString() : "#deleted-channel"}: \`${md.Total} message\``).join("\n")}
+    ** **${messageList}
     `);
 
     message.channel.send(embed);
