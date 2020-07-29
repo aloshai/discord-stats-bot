@@ -13,8 +13,8 @@ require("moment-duration-format");
  */
 exports.run = async (client, message, args) => {
 
-    let voiceData = vt.get(`stats.${message.author.id}`) || {voice: 0, channels: {}};
-    let messageData = mdb.get(`stats.${message.author.id}`) || {messages: 0, channels: {}};
+    let voiceData = vt.get(`stats.${message.guild.id}.${message.author.id}`) || {voice: 0, channels: {}};
+    let messageData = mdb.get(`stats.${message.guild.id}.${message.author.id}`) || {messages: 0, channels: {}};
 
     let voiceList = Object.keys(voiceData.channels).map(vd => {
         return {
