@@ -23,13 +23,13 @@ exports.execute = async (oldState, newState) => {
     let duration = Date.now() - data;
     if(oldState.channelID && !newState.channelID) { // This user has left the channel.
         Activites.delete(oldState.id);
-        vt.add(`stats.${oldState.id}.channels.${oldState.channelID}`, duration);
-        vt.set(`stats.${oldState.id}.activity`, Date.now());
+        vt.add(`stats.${oldState.guild.id}.${oldState.id}.channels.${oldState.channelID}`, duration);
+        vt.set(`stats.${oldState.guild.id}.${oldState.id}.activity`, Date.now());
     }
     else if(oldState.channelID && newState.channelID){ // This user has changes the channel.
         Activites.set(oldState.id, Date.now());
-        vt.add(`stats.${oldState.id}.channels.${oldState.channelID}`, duration);
-        vt.set(`stats.${oldState.id}.activity`, Date.now());
+        vt.add(`stats.${oldState.guild.id}.${oldState.id}.channels.${oldState.channelID}`, duration);
+        vt.set(`stats.${oldState.guild.id}.${oldState.id}.activity`, Date.now());
     }
 };
 
