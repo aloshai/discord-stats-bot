@@ -18,4 +18,5 @@ Discord'da bot olarak geliştirilen, kullanıcıların aktifliğiyle alakalı en
 
 `Token` kısmını doldurun.
 
-> TADA! BOTUN HAZIR!
+> 🎉 Tada! Botun artık hazır! 🎉
+> Dipnot: Botun veritabanı tamamen yerel bir `JSON` dosyası olarak çalışıyor. Eğer makineniz/bilgisayarınız/sunucunuz herhangi bir şekilde dosya yazma/oluşturma/okuma izinlerine sahip değilse bu veritabanı tamamen geçersiz olur.
