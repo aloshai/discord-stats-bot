@@ -1,0 +1,24 @@
+{
+  "name": "discord-stat-bot",
+  "version": "1.0.0",
+  "description": "This bot is a simple Stat bot. The data it records are user activities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "stat",
+    "discord",
+    "serendia",
+    "squad",
+    "Alosha"
+  ],
+  "author": "Alosha",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "moment": "^2.27.0",
+    "moment-duration-format": "^2.3.2"
+  }
+}
