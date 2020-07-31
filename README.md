@@ -1,28 +1,27 @@
 # discord-stats-bot
-Discord'da bot olarak geliştirilen, kullanıcıların aktifliğiyle alakalı en net bilgilere ulaşabilmek ve bir sıralamayla bunları takip edebileceğin bot.
+A bot that lets you to view activity of users with ranking.
 
-## Kurulum
-* Projeyi bilgisayarınıza indirin.
-* Herhangi bir klasörün içerisine projedeki tüm dosyaları aktarın.
-* Projeyi aktardığınız klasörün konumunu kopyalayın.
-* CMD'yi açın ve `cd kopyaladigin/konum` ardından `npm i` yazın.
+## Installation
+* Download the project.
+* Extract the files to a folder.
+* Copy the path of that directory.
+* Run cmd, type `cd path/you/copied` and then `npm i`.
 
-> Yükleme tamamlandıktan sonra `Settings` klasörüne girin ardından `Settings.json` dosyasına girin.
-```
+> After the installation, go into the `Settings` folder and then open the `Settings.json` file.
+
 {
     "Token": "",
     "Prefix": "!",
     "Private_Server": true
 }
-```
 
-`Token` kısmını doldurun.
+Fill the `Token` part.
 
-# 🎉 Tada! Botun artık hazır! 🎉
+# 🎉 Ta da! Your bot is ready to go! 🎉
 
-> Dipnot: Botun veritabanı tamamen yerel bir `JSON` dosyası olarak çalışıyor. Eğer makineniz/bilgisayarınız/sunucunuz herhangi bir şekilde dosya yazma/oluşturma/okuma izinlerine sahip değilse bu veritabanı tamamen geçersiz olur.
+> Footnote: Bot's database is based on a `JSON` file. If your machine/computer/server doesn't have read/create/wrtie permissions, then the database will be invalid.
 
 
 # discord.gg/serendia
 
-### Bot içindeki özellikler sürümden kaynaklıdır. İleriki zamanlarda yeni özellikler ve istatistikler getireceğiz.
+### Features that's included in bot does depend on the version. We'll add new features and statistics in future.
