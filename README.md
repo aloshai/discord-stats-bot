@@ -25,3 +25,5 @@ Fill the `Token` part.
 # discord.gg/serendia
 
 ### Features that's included in bot does depend on the version. We'll add new features and statistics in future.
+
+# Discord: Alosha#0777
