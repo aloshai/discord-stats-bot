@@ -12,8 +12,8 @@ require("moment-duration-format");
  * @param {Array<String>} args 
  */
 exports.run = async (client, message, args) => {
-    const voiceData = vt.get("stats.${message.guild.id}") || undefined;
-    const messageData = mdb.get("stats.${message.guild.id}") || undefined;
+    const voiceData = vt.get(`stats.${message.guild.id}`) || undefined;
+    const messageData = mdb.get(`stats.${message.guild.id}`) || undefined;
 
     let messageList = "No results.";
     if(messageData){
