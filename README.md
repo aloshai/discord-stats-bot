@@ -9,11 +9,13 @@ A bot that lets you to view activity of users with ranking.
 
 > After the installation, go into the `Settings` folder and then open the `Settings.json` file.
 
+```json
 {
     "Token": "",
     "Prefix": "!",
     "Private_Server": true
 }
+```
 
 Fill the `Token` part.
 
